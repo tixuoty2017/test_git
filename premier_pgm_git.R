@@ -1,3 +1,5 @@
+library(dplyr)
+
 url="http://vlsstats.ifsttar.fr/rawdata/RawData/data_all_Paris.jjson"
 data<-fromJSON(sprintf("[%s]", paste(readLines(url), collapse=",")))
 data[[10]]
